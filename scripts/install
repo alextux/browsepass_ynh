@@ -34,7 +34,7 @@ sudo cp ../conf/nginx.conf /etc/nginx/conf.d/$domain.d/browsepass.conf
 sudo yunohost app setting $app is_public -v "$is_public"
 if [ "$is_public" = "Yes" ];
 then
-    sudo yunohost app setting $appp skipped_uris -v "/"
+    sudo yunohost app setting $app skipped_uris -v "/"
 fi
 
 # Reload Nginx and regenerate SSOwat conf
